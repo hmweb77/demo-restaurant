@@ -2,6 +2,8 @@
 import React from 'react';
 import { Phone, Mail, Clock, MapPin, Send } from 'lucide-react';
 
+
+
 export default function Contact() {
 
   return (
@@ -30,7 +32,7 @@ export default function Contact() {
                 <MapPin className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">Address</h3>
-                  <p className="text-gray-300">123 Commerce Street, London EC1</p>
+                <a href="https://maps.app.goo.gl/so3SqyhK82G2YZzG7"><p className="text-gray-300 underline">Rua da Boavista 166, 1200-177 Lisboa</p></a>  
                 </div>
               </div>
 
@@ -38,7 +40,7 @@ export default function Contact() {
                 <Phone className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-300">020 1234 5678</p>
+                  <p className="text-gray-300">+351 925954916</p>
                 </div>
               </div>
 
@@ -46,7 +48,7 @@ export default function Contact() {
                 <Mail className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-gray-300">contact@momentos.co.uk</p>
+                  <p className="text-gray-300">momentos.lisb@gmail.com</p>
                 </div>
               </div>
 
@@ -55,9 +57,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Hours</h3>
                   <p className="text-gray-300">
-                    Tuesday - Saturday: 10am - 10pm<br />
-                    Sunday: 11am - 5pm<br />
-                    Closed on Monday
+                    Monday - Saturday: 11 AM–9 PM<br /> 
+                    Closed on Sunday
                   </p>
                 </div>
               </div>
@@ -66,12 +67,13 @@ export default function Contact() {
 
           <div className="bg-stone-800 p-8 rounded-xl">
             <h3 className="text-2xl font-serif mb-6">Ask Orlando</h3>
-            <form className="space-y-6">
+            <form action="https://formsubmit.co/your@oussamahamdani1@gmail.com" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                   Your Name
                 </label>
                 <input
+                name="name"
                   type="text"
                   id="name"
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
@@ -84,6 +86,7 @@ export default function Contact() {
                   Email Address
                 </label>
                 <input
+                name="email"
                   type="email"
                   id="email"
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
@@ -96,6 +99,7 @@ export default function Contact() {
                   I`&apos;`m interested in
                 </label>
                 <select
+                name="interest"
                   id="interest"
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
                 >
@@ -113,6 +117,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
                   placeholder="Tell us what you're looking for..."

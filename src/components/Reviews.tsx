@@ -39,6 +39,15 @@ export default function Reviews() {
           ))}
         </div>
       </div>
+      <div className='grid mt-20 items-center justify-center'>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3815753260005!2d-9.152931423936923!3d38.70904757176491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19359c72318e13%3A0x9b9107d00a0cf211!2sMomentos%20Wine%20%26%20Cheese!5e0!3m2!1sen!2spt!4v1730931938778!5m2!1sen!2spt"
+            className="w-full sm:w-[400px] md:w-[600px] lg:w-[900px] h-[300px] md:h-[450px] lg:h-[450px]"
+            
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+      </div>
     </div>
   );
 }

@@ -93,7 +93,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
-                  I'm interested in
+                  I`&apos;`m interested in
                 </label>
                 <select
                   id="interest"

@@ -80,7 +80,7 @@ export default function BestSellers() {
         <div className="text-center mb-12">
           <h2 className="section-title">Nossa Seleção</h2>
           <p className="section-subtitle">
-            Carefully curated selections from Portugal's finest regions
+            Carefully curated selections from Portugal`&apos;`s finest regions
           </p>
         </div>
 

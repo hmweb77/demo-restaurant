@@ -10,20 +10,9 @@ export default function Navbar() {
     <nav className="bg-[#2C1810] text-[#FBF7F4] py-4 px-6 fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <Wine className="h-10 w-10 text-[#CD8D7A]" />
-          <div className="flex flex-col">
-            <div className="flex items-baseline gap-4">
-              <span className="text-3xl font-playfair tracking-wide border-b-2 border-[#CD8D7A]/30 pb-1">
-                Momentos
-              </span>
-              <span className="hidden lg:block text-sm italic text-[#CD8D7A] font-light">
-                100% Traditional Experience
-              </span>
-            </div>
-            <span className="text-sm text-[#CD8D7A] font-lora tracking-widest uppercase mt-1">
-              Wine & Cheese
-            </span>
-          </div>
+            <div className="flex w-40 gap-4">
+              <img src="../Logo Setembro 2024.png" alt="logo" />
+            </div>      
         </div>
 
         {/* Desktop Menu */}

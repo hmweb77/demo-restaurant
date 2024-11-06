@@ -5,19 +5,31 @@ import { Store } from 'lucide-react';
 const Gallery = () => {
   const images = [
     {
-      url: "../photo_2024-11-06_20-25-51.jpg",
+      url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (1).jpeg",
       title: "Wine Cellar",
       description: "Our traditional stone cellar houses hundreds of Portuguese wines",
-      className: "md:col-span-2 aspect-video"
+      className: "md:col-span-2 aspect-square"
     },
     {
-      url: "../photo_2024-11-06_20-25-47.jpg",
+      url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (2).jpeg",
       title: "Rustic Corner",
       description: "Cozy spots for intimate tastings",
-      className: "aspect-[3/4]"
+      className: "aspect-square"
     },
     {
-      url: "../photo_2024-11-06_20-25-45.jpg",
+      url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (3).jpeg",
+      title: "Rustic Corner",
+      description: "Cozy spots for intimate tastings",
+      className: "aspect-square"
+    },
+    {
+      url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (4).jpeg",
+      title: "Rustic Corner",
+      description: "Cozy spots for intimate tastings",
+      className: "aspect-square"
+    },
+    {
+      url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25.jpeg",
       title: "Traditional Bar",
       description: "Where stories and Porto wine flow freely",
       className: "aspect-square"

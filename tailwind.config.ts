@@ -7,6 +7,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        navcol:"#DACEC1",
         primary: {
           DEFAULT: "#8B4513",
           dark: "#5C3D2E",

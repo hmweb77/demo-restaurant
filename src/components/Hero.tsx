@@ -42,7 +42,7 @@ export default function Hero() {
 
       <div className="bg-secondary text-cream py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-playfair mb-8">The Casa do Vinho Experience</h2>
+          <h2 className="text-3xl font-playfair mb-8">The wine house</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-secondary-light p-8 rounded-xl">
               <div className="flex flex-col items-center">

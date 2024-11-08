@@ -56,17 +56,17 @@ const beverages = {
       {
         name: "Aguardentes",
         items: [
-          "Aguardente Vínica Velha",
-          "Aguardente Bagaceira",
-          "Macieira Royal"
+          "Aguardente Medronho Sulista",
+          "Monte dos Perdigões 10 anos",
+          "Aguardente Vínica Marquês de Borba"
         ]
       },
       {
         name: "Licores Tradicionais",
         items: [
-          "Licor Beirão",
-          "Ginjinha de Óbidos",
-          "Amarguinha"
+          "Moscatel Setúbal Reserva 5 anos",
+          "Ginjinha Mariquinhas",
+          "Porto Messias LBV 2017"
         ]
       }
     ]

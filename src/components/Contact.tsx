@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Phone, Mail, Clock, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin, Send, Instagram, Facebook } from 'lucide-react';
 
 
 
@@ -23,6 +23,12 @@ export default function Contact() {
               Passionate about Portuguese wines and cheeses for over 20 years, Orlando is always here to guide you and share his love for Portuguese gastronomy.
             </p>
           </div>
+          <div className='flex space-x-8  justify-end'>
+         <a href="https://www.instagram.com/momentos.lisb/" target='blank'><Instagram size={32} /></a> 
+        <a href="https://www.facebook.com/momentos.lisb/" target='blank'> <Facebook size={32} /></a> 
+        <a href='https://www.tripadvisor.com/Restaurant_Review-g189158-d27276938-Reviews-Momentos_Wine_Cheese-Lisbon_Lisbon_District_Central_Portugal.html' target='blank'><img src="../assets/tripadvisor.png" className='w-10'/></a>    
+          </div>
+         
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">

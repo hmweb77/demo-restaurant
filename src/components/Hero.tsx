@@ -1,24 +1,25 @@
 "use client"
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 import { Wine, Pizza, UtensilsCrossed, ShoppingBag } from 'lucide-react';
 
 export default function Hero() {
-
+  const { t } = useTranslation('common');
   return (
     <div className="pt-20">
       <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto px-6 py-16">
         <div className="relative group overflow-hidden rounded-2xl shadow-xl">
-          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300"></div>
+          <div className="absolute inset-0 bg-black/50 group-hover:bg-black/50 transition duration-300"></div>
           <img 
             src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80"
             alt="Portuguese Wine Selection" 
             className="w-full h-[600px] object-cover transform group-hover:scale-105 transition duration-300"
           />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-cream p-8">
+          <div className="absolute  inset-0 flex flex-col justify-center items-center text-cream p-8">
             <Wine className="h-16 w-16 mb-4" />
-            <h2 className="text-3xl font-playfair mb-4">Our Wines</h2>
-            <p className="text-center text-lg max-w-md font-lora">
-              Discover our exclusive selection of Portuguese wines, carefully chosen to bring you the finest flavors from the Lusitanian terroir.
+            <h2 className="text-3xl bg-black/50 rounded-lg p-2 font-playfair drop-shadow-2xl mb-4"> {t('wine')}</h2>
+            <p className="text-center bg-black/50 rounded-lg p-2  text-lg max-w-md font-lora">
+            {t('wineDescri')}         
             </p>
           </div>
         </div>
@@ -30,10 +31,10 @@ export default function Hero() {
             alt="Portuguese Cheese Selection" 
             className="w-full h-[600px] object-cover transform group-hover:scale-105 transition duration-300"
           />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-cream p-8">
+          <div className="absolute inset-0 flex flex-col justify-center items-center text-cream p-8 ">
             <Pizza className="h-16 w-16 mb-4" />
-            <h2 className="text-3xl font-playfair mb-4">Our Cheeses</h2>
-            <p className="text-center text-lg max-w-md font-lora">
+            <h2 className="text-3xl bg-black/50 rounded-lg p-2  font-playfair mb-4">Our Cheeses</h2>
+            <p className="text-center bg-black/50 rounded-lg p-2  text-lg max-w-md font-lora">
               Savor the authenticity of our artisanal Portuguese cheeses, perfect for both dine-in and takeaway experiences.
             </p>
           </div>

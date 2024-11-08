@@ -93,8 +93,8 @@ export default function BestSellers() {
             {cheeseBoards.map((board, index) => (
               <div key={index} className="bg-[#FDF8F3] rounded-xl shadow-lg overflow-hidden border border-primary/10">
                 <div className="aspect-w-16 aspect-h-9 relative">
-                  <img 
-                    src={board.image} 
+                  <img
+                    src={board.image}
                     alt={board.title}
                     className="w-full h-48 object-cover"
                   />
@@ -115,13 +115,13 @@ export default function BestSellers() {
             ))}
           </div>
         </div>
-        <div className="mb-10 ">
-                  <img 
-                    src="../assets/44.png" 
-                    alt="meat and cheese"
-                    className="aspect-video object-center rounded-3xl object-cover"
-                  />
-                </div>
+        <div className="flex items-center justify-center mb-10 ">
+          <img
+            src="../assets/44.png"
+            alt="meat and cheese"
+            className="w-[700px] aspect-video object-center rounded-3xl object-cover"
+          />
+        </div>
 
         <div>
           <h3 className="text-2xl font-playfair mb-8 flex items-center justify-center text-primary-dark">
@@ -132,8 +132,8 @@ export default function BestSellers() {
             {Object.values(beverages).map((category, index) => (
               <div key={index} className="bg-[#FDF8F3] rounded-xl shadow-lg overflow-hidden border border-primary/10">
                 <div className="aspect-w-16 aspect-h-9">
-                  <img 
-                    src={category.image} 
+                  <img
+                    src={category.image}
                     alt={category.title}
                     className="w-full h-48 object-cover"
                   />

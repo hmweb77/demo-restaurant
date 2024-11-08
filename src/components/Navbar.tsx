@@ -2,10 +2,35 @@
 import React, { useState } from 'react';
 import { Menu, Wine, X } from 'lucide-react';
 
+
+// components/Navbar.js
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+
+  
+
+
+    // <nav>
+   
+    //   <button onClick={toggleLanguage}>
+    //     {t('translate')}
+    //   </button>
+    // </nav>
+
+
+
+
 export default function Navbar() {
  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation('common');
+  const router = useRouter();
+  const { locale } = router;
 
+  const toggleLanguage = () => {
+    const nextLocale = locale === 'en' ? 'pt' : 'en';
+    router.push(router.pathname, router.asPath, { locale: nextLocale });
+  };
   return (
     <nav className="bg-[#DACEC1] text-[#2C1810] py-4 px-6 fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -22,6 +47,9 @@ export default function Navbar() {
           <a href="#menu" className="hover:text-[#CD8D7A] transition-colors">Menu</a>
           <a href="#reviews" className="hover:text-[#CD8D7A] transition-colors">Reviews</a>
           <a href="#contact" className="hover:text-[#CD8D7A] transition-colors">Contact</a>
+        <button className='border border-black px-2 rounded-xl' onClick={toggleLanguage}>
+        {t('translate')}
+     </button>
         </div>
 
         {/* Mobile Menu Button */}

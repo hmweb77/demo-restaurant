@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { Menu, Wine, X } from 'lucide-react';
+import { Menu, Wine, X,Languages } from 'lucide-react';
 
 
 // components/Navbar.js
@@ -47,8 +47,8 @@ export default function Navbar() {
           <a href="#menu" className="hover:text-[#CD8D7A] transition-colors">Menu</a>
           <a href="#reviews" className="hover:text-[#CD8D7A] transition-colors">Reviews</a>
           <a href="#contact" className="hover:text-[#CD8D7A] transition-colors">Contact</a>
-        <button className='border border-black px-2 rounded-xl' onClick={toggleLanguage}>
-        {t('translate')}
+        <button className='border flex border-black px-2 rounded-xl' onClick={toggleLanguage}>
+        <Languages className='mr-2' />   {t('translate')}
      </button>
         </div>
 
@@ -99,6 +99,14 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
+            </a>
+             
+            <a 
+
+              className="flex text-[#FBF7F4] p-2 hover:text-[#CD8D7A] transition-colors"
+              onClick={toggleLanguage}
+            ><Languages className='mr-2 text-white' />{t('translate')}
+            
             </a>
           </div>
         </div>

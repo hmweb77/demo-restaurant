@@ -2,15 +2,16 @@
 import React from 'react';
 import { Phone, Mail, Clock, MapPin, Send, Instagram, Facebook } from 'lucide-react';
 
+import { useTranslation } from 'next-i18next';
 
 
 export default function Contact() {
-
+  const { t } = useTranslation('common');
   return (
     <div className="bg-stone-900 text-white py-16" id="contact">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-serif mb-4">Meet Orlando</h2>
+          <h2 className="text-3xl font-serif mb-4">{t('Meet Orlando')}</h2>
           <div className="flex flex-col items-center mb-8">
             <div className="w-48 h-48 rounded-full overflow-hidden mb-6 ring-4 ring-amber-500">
               <img 
@@ -20,7 +21,7 @@ export default function Contact() {
               />
             </div>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Passionate about Portuguese wines and cheeses for over 20 years, Orlando is always here to guide you and share his love for Portuguese gastronomy.
+             {t('Passionate about Portuguese wines and cheeses for over 20 years, Orlando is always available to guide you and share his love for Portuguese gastronomy.')}
             </p>
           </div>
           <div className='flex space-x-8  justify-end'>
@@ -61,7 +62,7 @@ export default function Contact() {
               <div className="flex items-start space-x-4 mt-6">
                 <Clock className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold mb-1">Hours</h3>
+                  <h3 className="font-semibold mb-1">{t('Hours')}</h3>
                   <p className="text-gray-300">
                     Monday - Saturday: 11 AM–9 PM<br /> 
                     Closed on Sunday

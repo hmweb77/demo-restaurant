@@ -17,9 +17,9 @@ export default function Hero() {
           />
           <div className="absolute  inset-0 flex flex-col justify-center items-center text-cream p-8">
             <Wine className="h-16 w-16 mb-4" />
-            <h2 className="text-3xl bg-black/50 rounded-lg p-2 font-playfair drop-shadow-2xl mb-4"> {t('wine')}</h2>
+            <h2 className="text-3xl bg-black/50 rounded-lg p-2 font-playfair drop-shadow-2xl mb-4"> {t('Our Wines')}</h2>
             <p className="text-center bg-black/50 rounded-lg p-2  text-lg max-w-md font-lora">
-            {t('wineDescri')}         
+            {t('Discover our exclusive selection of Portuguese wines, carefully chosen to bring you the best flavors of the Lusitanian terroir.')}         
             </p>
           </div>
         </div>
@@ -33,9 +33,9 @@ export default function Hero() {
           />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-cream p-8 ">
             <Pizza className="h-16 w-16 mb-4" />
-            <h2 className="text-3xl bg-black/50 rounded-lg p-2  font-playfair mb-4">Our Cheeses</h2>
+            <h2 className="text-3xl bg-black/50 rounded-lg p-2  font-playfair mb-4">{t('Our Cheeses')}</h2>
             <p className="text-center bg-black/50 rounded-lg p-2  text-lg max-w-md font-lora">
-              Savor the authenticity of our artisanal Portuguese cheeses, perfect for both dine-in and takeaway experiences.
+            {t('Savor the authenticity of our artisanal Portuguese cheeses, perfect for enjoying on-site or taking home.')}
             </p>
           </div>
         </div>
@@ -43,16 +43,16 @@ export default function Hero() {
 
       <div className="bg-secondary text-cream py-16">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-playfair mb-8">The wine house</h2>
+          <h2 className="text-3xl font-playfair mb-8">{t('The wine house')}</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-secondary-light p-8 rounded-xl">
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <UtensilsCrossed className="h-8 w-8 text-primary-light" />
                 </div>
-                <h3 className="text-2xl font-playfair mb-4">Dine In</h3>
+                <h3 className="text-2xl font-playfair mb-4">{t('On-Site Tasting')}</h3>
                 <p className="text-cream/80 font-lora">
-                  Enjoy our authentic and warm atmosphere for an unforgettable tasting experience in true Portuguese tradition.
+                {t('Enjoy our authentic and warm atmosphere for an unforgettable tasting experience in true Portuguese tradition.')}
                 </p>
               </div>
             </div>
@@ -61,9 +61,9 @@ export default function Hero() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <ShoppingBag className="h-8 w-8 text-primary-light" />
                 </div>
-                <h3 className="text-2xl font-playfair mb-4">Take Away</h3>
+                <h3 className="text-2xl font-playfair mb-4"> {t('Take Away')}</h3>
                 <p className="text-cream/80 font-lora">
-                  Take a piece of Portugal home with our carefully packaged selection of wines and cheeses.
+                {t(' Take a piece of Portugal home with our carefully packed selection of wines and cheeses.')}
                 </p>
               </div>
             </div>

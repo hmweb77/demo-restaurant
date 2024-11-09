@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Wine, UtensilsCrossed, Grape } from 'lucide-react';
-
+import { useTranslation } from 'next-i18next';
 const cheeseBoards = [
   {
     title: "Tábua Regional",
@@ -74,20 +74,21 @@ const beverages = {
 };
 
 export default function BestSellers() {
+  const { t } = useTranslation('common');
   return (
     <div className="py-16 bg-[#F5E6D3] bg-texture" id="bestsellers">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="section-title">Nossa Seleção</h2>
+          <h2 className="section-title">{t('Our Selection')}</h2>
           <p className="section-subtitle">
-            Carefully curated selections from Portugal`&apos;`s finest regions
+          {t(' Carefully curated selections from the best regions of Portugal.')}
           </p>
         </div>
 
         <div className="mb-16">
           <h3 className="text-2xl font-playfair mb-8 flex items-center justify-center text-primary-dark">
             <UtensilsCrossed className="h-6 w-6 mr-2 text-primary" />
-            <span>Tábuas de Queijos e Enchidos</span>
+            <span>{t('Cheese and Charcuterie Boards')}</span>
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             {cheeseBoards.map((board, index) => (

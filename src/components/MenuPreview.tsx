@@ -80,18 +80,18 @@ const MenuPreview = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/10">
             <div className="flex items-center justify-center mb-6">
-              <Wine className="h-6 w-6 text-primary mr-2" />
-              <h3 className="text-2xl font-playfair text-primary-dark">Drinks</h3>
+              <Wine className="h-6 w-6  text-primary mr-2" />
+              <h3 className="text-2xl  font-playfair text-primary-dark">Drinks</h3>
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 ">
               {drinks.map((section, index) => (
                 <div key={index}>
-                  <h4 className="text-lg font-playfair mb-3 text-primary-dark">{section.category}</h4>
+                  <h4 className="text-lg flex justify-center font-playfair mb-3 text-primary-dark">{section.category}</h4>
                   <ul className="space-y-3">
                     {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex justify-between items-baseline font-lora">
+                      <li key={itemIndex} className="flex text-primary-dark/90 justify-center font-lora">
                         <span className="text-primary-dark/90">{item.name}</span>
-                        <span className="text-primary ml-4 text-sm tabular-nums">{item.price}</span>
+
                       </li>
                     ))}
                   </ul>
@@ -108,12 +108,12 @@ const MenuPreview = () => {
             <div className="space-y-8">
               {foods.map((section, index) => (
                 <div key={index}>
-                  <h4 className="text-lg font-playfair mb-3 text-primary-dark">{section.category}</h4>
+                  <h4 className="text-lg font-playfair flex justify-center mb-3 text-primary-dark">{section.category}</h4>
                   <ul className="space-y-3">
                     {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex justify-between items-baseline font-lora">
+                      <li key={itemIndex} className="flex justify-center  font-lora">
                         <span className="text-primary-dark/90">{item.name}</span>
-                        <span className="text-primary ml-4 text-sm tabular-nums">{item.price}</span>
+
                       </li>
                     ))}
                   </ul>

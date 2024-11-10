@@ -73,7 +73,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-stone-800 p-8 rounded-xl">
-            <h3 className="text-2xl font-serif mb-6">Ask Orlando</h3>
+            <h3 className="text-2xl font-serif mb-6">{t('Ask')} Orlando</h3>
             <form action="https://formsubmit.co/your@oussamahamdani1@gmail.com" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -103,7 +103,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
-                {t(" I'm interested in")}
+                {t("I'm interested in")}
                 </label>
                 <select
                 name="interest"
@@ -127,7 +127,7 @@ export default function Contact() {
                   name="message"
                   rows={4}
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
-                  placeholder="Tell us what you're looking for..."
+                  placeholder={t("Tell us what you're looking for...")}
                 ></textarea>
               </div>
 

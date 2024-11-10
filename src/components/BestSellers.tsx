@@ -9,7 +9,7 @@ const cheeseBoards = [
   {
     title: `${t("Tábua Regional")}`,
     items: [
-      `${t("Queijo do Cabra 'Planície Branca'")}`,
+      `${t("Goat Cheese 'Planície Branca'")}`,
       `${t( "Queijo São Jorge DOP 24 Meses")}`,
       `${t("Queijo de Ovelha Curado MalpiQueijo Kg")}`,
 

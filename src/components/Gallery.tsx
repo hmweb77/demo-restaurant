@@ -8,31 +8,31 @@ const Gallery = () => {
   const images = [
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (1).jpeg",
-      title: "Wine Cellar",
+      title: "Momentos",
       description: "Our traditional stone cellar houses hundreds of Portuguese wines",
       className: "md:col-span-2 aspect-square"
     },
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (2).jpeg",
-      title: "Rustic Corner",
+      title: "Momentos",
       description: "Cozy spots for intimate tastings",
       className: "aspect-square"
     },
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (3).jpeg",
-      title: "Rustic Corner",
+      title: "Momentos",
       description: "Cozy spots for intimate tastings",
       className: "aspect-square"
     },
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (4).jpeg",
-      title: "Rustic Corner",
+      title: "Momentos",
       description: "Cozy spots for intimate tastings",
       className: "aspect-square"
     },
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25.jpeg",
-      title: "Traditional Bar",
+      title: "Momentos",
       description: "Where stories and Porto wine flow freely",
       className: "aspect-square"
     }
@@ -66,9 +66,7 @@ const Gallery = () => {
                 <h3 className="text-xl font-playfair text-cream mb-2">
                   {image.title}
                 </h3>
-                <p className="text-cream/90 font-lora text-sm">
-                  {image.description}
-                </p>
+               
               </div>
             </div>
           ))}

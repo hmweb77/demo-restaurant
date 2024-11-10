@@ -74,7 +74,7 @@ export default function Contact() {
 
           <div className="bg-stone-800 p-8 rounded-xl">
             <h3 className="text-2xl font-serif mb-6">{t('Ask')} Orlando</h3>
-            <form action="https://formsubmit.co/your@oussamahamdani1@gmail.com" method="POST">
+            <form action="https://formsubmit.co/webdesign.lisbon@gmail.com" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                 {t('name')} 

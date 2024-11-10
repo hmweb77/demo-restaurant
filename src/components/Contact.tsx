@@ -38,7 +38,7 @@ export default function Contact() {
               <div className="flex items-start space-x-4">
                 <MapPin className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold mb-1">Address</h3>
+                  <h3 className="font-semibold mb-1"> {t('Address')}</h3>
                 <a href="https://maps.app.goo.gl/so3SqyhK82G2YZzG7"><p className="text-gray-300 underline">Rua da Boavista 166, 1200-177 Lisboa</p></a>  
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function Contact() {
               <div className="flex items-start space-x-4 mt-6">
                 <Phone className="h-6 w-6 text-amber-500 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold mb-1">Phone</h3>
+                  <h3 className="font-semibold mb-1"> {t('Phone')}</h3>
                   <p className="text-gray-300">+351 925954916</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                   <h3 className="font-semibold mb-1">{t('Hours')}</h3>
                   <p className="text-gray-300">
                   {t('monday')} - {t('saturday')}: 11 AM–9 PM<br /> 
-                  {t('sunday')}   Closed on Sunday
+                  {t('sunday')}  
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email Address
+                  Email
                 </label>
                 <input
                 name="email"
@@ -103,24 +103,24 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
-                  I`&apos;`m interested in
+                {t(" I'm interested in")}
                 </label>
                 <select
                 name="interest"
                   id="interest"
                   className="w-full px-4 py-2 bg-stone-700 border border-stone-600 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent text-white"
                 >
-                  <option value="">Select your interest</option>
-                  <option value="wine">Wine Recommendations</option>
-                  <option value="cheese">Cheese Selection</option>
-                  <option value="pairing">Wine & Cheese Pairing</option>
-                  <option value="events">Private Events</option>
+                  <option value=""> {t('Select your interest')}</option>
+                  <option value="wine"> {t('Wine Recommendations')}</option>
+                  <option value="cheese"> {t('Cheese Selection')}</option>
+                  <option value="pairing"> {t('Wine & Cheese Pairing')}</option>
+                  <option value="events"> {t('Private Events')}</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Your Message
+                {t('Your Message')}
                 </label>
                 <textarea
                   id="message"
@@ -135,7 +135,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full flex items-center justify-center space-x-2 bg-amber-500 hover:bg-amber-600 text-white py-3 px-6 rounded-lg font-medium transition-colors duration-200"
               >
-                <span>Send Message</span>
+                <span> {t('Send Message')}</span>
                 <Send className="h-5 w-5" />
               </button>
             </form>

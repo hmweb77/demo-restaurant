@@ -29,6 +29,13 @@ const cheeseBoards = [
   }
 ];
 
+
+
+
+
+
+
+
 const beverages = {
   wines: {
     title: "Vinhos",
@@ -37,17 +44,17 @@ const beverages = {
       {
         name: "Douro Valley Red",
         items: [
-          "Quinta do Vale Meão 2019",
-          "Quinta do Crasto Reserva",
-          "Quinta do Vale D. Maria"
+          "São Luiz reserva",
+          "Xisto Ilimitado",
+          "Quinta da Gaivota"
         ]
       },
       {
-        name: "Vinho Verde",
+        name: "Alentejo Red Wines",
         items: [
-          "Soalheiro Alvarinho 2022",
-          "Quinta do Ameal Loureiro",
-          "Anselmo Mendes Muros Antigos"
+          "Mouchão 2016",
+          "Herdade dos Perdigões Vinhas Velhas",
+          "Vicentino Pinot Noir"
         ]
       }
     ]
@@ -129,7 +136,7 @@ const beverages = {
         <div>
           <h3 className="text-2xl font-playfair mb-8 flex items-center justify-center text-primary-dark">
             <Wine className="h-6 w-6 mr-2 text-primary" />
-            <span>Bebidas Selecionadas</span>
+            <span>{t('Bebidas Selecionadas')}</span>
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
             {Object.values(beverages).map((category, index) => (

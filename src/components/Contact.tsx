@@ -64,8 +64,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">{t('Hours')}</h3>
                   <p className="text-gray-300">
-                    Monday - Saturday: 11 AM–9 PM<br /> 
-                    Closed on Sunday
+                  {t('monday')} - {t('saturday')}: 11 AM–9 PM<br /> 
+                  {t('sunday')}   Closed on Sunday
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Contact() {
             <form action="https://formsubmit.co/your@oussamahamdani1@gmail.com" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Your Name
+                {t('name')} 
                 </label>
                 <input
                 name="name"

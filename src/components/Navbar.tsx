@@ -43,10 +43,10 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-lg font-lora">
           <a href="#" className="hover:text-[#CD8D7A] transition-colors">Home</a>
-          <a href="#bestsellers" className="hover:text-[#CD8D7A] transition-colors">Best Sellers</a>
-          <a href="#menu" className="hover:text-[#CD8D7A] transition-colors">Menu</a>
-          <a href="#reviews" className="hover:text-[#CD8D7A] transition-colors">Reviews</a>
-          <a href="#contact" className="hover:text-[#CD8D7A] transition-colors">Contact</a>
+          <a href="#bestsellers" className="hover:text-[#CD8D7A] transition-colors">{t('bestsellers')}</a>
+          <a href="#menu" className="hover:text-[#CD8D7A] transition-colors">{t('menu')}</a>
+          <a href="#reviews" className="hover:text-[#CD8D7A] transition-colors">{t('reviews')}</a>
+          <a href="#contact" className="hover:text-[#CD8D7A] transition-colors">{t('contact')}</a>
         <button className='border flex border-black px-2 rounded-xl' onClick={toggleLanguage}>
         <Languages className='mr-2' />   {t('translate')}
      </button>
@@ -77,28 +77,28 @@ export default function Navbar() {
               className="text-[#FBF7F4] hover:text-[#CD8D7A] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Best Sellers
+              {t('bestsellers')}
             </a>
             <a 
               href="#menu" 
               className="text-[#FBF7F4] hover:text-[#CD8D7A] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Menu
+             {t('menu')}
             </a>
             <a 
               href="#reviews" 
               className="text-[#FBF7F4] hover:text-[#CD8D7A] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Reviews
+              {t('reviews')}
             </a>
             <a 
               href="#contact" 
               className="text-[#FBF7F4] hover:text-[#CD8D7A] transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              {t('contact')}
             </a>
              
             <a 

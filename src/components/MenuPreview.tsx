@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Wine, Coffee } from 'lucide-react';
 import { sanityClient } from '@/sanityClient';
-
+import { useTranslation } from 'next-i18next';
 type DrinkItem = {
   name: string;
   price: string;
@@ -70,18 +70,19 @@ const MenuPreview = () => {
     fetchFoodsData().then((data) => setFoods(data));
   }, []);
  
+  const { t } = useTranslation('common');
 
   return (
     <div className="py-16 bg-[#F5E6D3]" id="menu">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="section-title">Our Menu</h2>
-        <p className="section-subtitle">Traditional Portuguese flavors with a modern twist</p>
+        <h2 className="section-title">{t('Our Menu')}</h2>
+        <p className="section-subtitle">{t('portugueselfav')} </p>
         
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/10">
             <div className="flex items-center justify-center mb-6">
               <Wine className="h-6 w-6  text-primary mr-2" />
-              <h3 className="text-2xl  font-playfair text-primary-dark">Drinks</h3>
+              <h3 className="text-2xl  font-playfair text-primary-dark">{t('Drinks')}</h3>
             </div>
             <div className="space-y-8 ">
               {drinks.map((section, index) => (
@@ -91,7 +92,6 @@ const MenuPreview = () => {
                     {section.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex text-primary-dark/90 justify-center font-lora">
                         <span className="text-primary-dark/90">{item.name}</span>
-
                       </li>
                     ))}
                   </ul>
@@ -103,7 +103,7 @@ const MenuPreview = () => {
           <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-lg border border-primary/10">
             <div className="flex items-center justify-center mb-6">
               <Coffee className="h-6 w-6 text-primary mr-2" />
-              <h3 className="text-2xl font-playfair text-primary-dark">Food</h3>
+              <h3 className="text-2xl font-playfair text-primary-dark">{t('Food')}</h3>
             </div>
             <div className="space-y-8">
               {foods.map((section, index) => (
@@ -129,33 +129,3 @@ const MenuPreview = () => {
 
 export default MenuPreview;
 
-
- // const drinks = [
-  //   {
-  //     category: "Red Wines",
-  //     items: [
-  //       { name: "Douro DOC Reserva", price: "Glass €8 | Bottle €36" },
-  //       { name: "Alentejo Regional", price: "Glass €7 | Bottle €32" },
-  //       { name: "Dão Selection", price: "Glass €9 | Bottle €42" },
-  //       { name: "Porto Vintage", price: "Glass €10" }
-  //     ]
-  //   },
-  //   {
-  //     category: "White Wines",
-  //     items: [
-  //       { name: "Vinho Verde", price: "Glass €7 | Bottle €30" },
-  //       { name: "Alvarinho Reserve", price: "Glass €8 | Bottle €36" },
-  //       { name: "Beira Interior DOC", price: "Glass €7 | Bottle €32" },
-  //       { name: "Bucelas DOC", price: "Glass €8 | Bottle €34" }
-  //     ]
-  //   },
-  //   {
-  //     category: "Spirits",
-  //     items: [
-  //       { name: "Aguardente Vínica", price: "50ml €9" },
-  //       { name: "Medronho Traditional", price: "50ml €8" },
-  //       { name: "Ginjinha Artisanal", price: "50ml €7" },
-  //       { name: "Licor Beirão", price: "50ml €7" }
-  //     ]
-  //   }
-  // ];

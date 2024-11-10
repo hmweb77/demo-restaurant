@@ -1,8 +1,10 @@
 "use client"
 import React from 'react';
 import { Store } from 'lucide-react';
+import { useTranslation } from 'next-i18next';
 
 const Gallery = () => {
+  const { t } = useTranslation('common');
   const images = [
     {
       url: "../assets/WhatsApp Image 2024-11-06 at 20.50.25 (1).jpeg",
@@ -42,17 +44,17 @@ const Gallery = () => {
         <div className="text-center mb-12">
           <h2 className="section-title flex items-center justify-center gap-3">
             <Store className="h-8 w-8 text-primary" />
-            <span>Experience Momentos</span>
+            <span> Momentos</span>
           </h2>
           <p className="section-subtitle">
-            A rustic haven of Portuguese gastronomy
+            {t('roustic')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {images.map((image, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className={`group relative overflow-hidden rounded-xl shadow-lg ${image.className}`}
             >
               <img

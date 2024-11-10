@@ -81,7 +81,7 @@ export default function BestSellers() {
         <div className="text-center mb-12">
           <h2 className="section-title">{t('Our Selection')}</h2>
           <p className="section-subtitle">
-          {t(' Carefully curated selections from the best regions of Portugal.')}
+          {t('Carefully curated selections from the best regions of Portugal.')}
           </p>
         </div>
 

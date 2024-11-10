@@ -38,7 +38,7 @@ const cheeseBoards = [
 
 const beverages = {
   wines: {
-    title: "Vinhos",
+    title: `${t("Vinhos")}`,
     image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80",
     selections: [
       {
@@ -60,7 +60,7 @@ const beverages = {
     ]
   },
   spirits: {
-    title: "Aguardentes & Licores",
+    title: `${t("Aguardentes & Licores")}`,
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&q=80",
     selections: [
       {

@@ -2,26 +2,29 @@
 import React from 'react';
 import { Wine, UtensilsCrossed, Grape } from 'lucide-react';
 import { useTranslation } from 'next-i18next';
+
+export default function BestSellers() {
+  const { t } = useTranslation('common');
 const cheeseBoards = [
   {
-    title: "Tábua Regional",
+    title: `${t("Tábua Regional")}`,
     items: [
-      "Queijo do Cabra 'Planície Branca'",
-      "Queijo São Jorge DOP 24 Meses",
-      "Queijo de Ovelha Curado MalpiQueijo Kg",
+      `${t("Queijo do Cabra 'Planície Branca'")}`,
+      `${t( "Queijo São Jorge DOP 24 Meses")}`,
+      `${t("Queijo de Ovelha Curado MalpiQueijo Kg")}`,
 
     ],
-    description: "A journey through Portugal's finest cheese regions",
+    description: `${t("A journey through Portugal's finest cheese regions")}`,
     image: "../assets/2.jpg"
   },
   {
-    title: "Tábua do Chef",
+    title: `${t("Tábua do Chef")}`,
     items: [
-      "Iberico Ham ( Pata Negra )",
-      "Copa Porco Preto",
-      "Lombo Porco Preto",
+      `${t("Iberico Ham ( Pata Negra )")}`,
+      `${t("Copa Porco Preto")}`,
+      `${t("Lombo Porco Preto")}`,
     ],
-    description: "Premium selection of traditional Portuguese charcuterie",
+    description: `${t("Premium selection of traditional Portuguese charcuterie")}`,
     image: "../assets/3.png"
   }
 ];
@@ -73,8 +76,7 @@ const beverages = {
   }
 };
 
-export default function BestSellers() {
-  const { t } = useTranslation('common');
+
   return (
     <div className="py-16 bg-[#F5E6D3] bg-texture" id="bestsellers">
       <div className="max-w-7xl mx-auto px-6">

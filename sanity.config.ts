@@ -19,7 +19,7 @@ export default defineConfig({
   basePath: '/studio',
   name: "resto",
   title: "resto",
-  projectId: 'quaxgg3z',
+  projectId: '5w36l5j8',
   dataset:'production',
   // Add and edit the content schema in the './sanity/schema' folder
   schema,
